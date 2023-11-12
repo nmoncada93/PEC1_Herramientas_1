@@ -1,0 +1,66 @@
+:root {
+  --font-orbitron: "Orbitron", sans-serif;
+  --font-titilium: "Titillium Web", sans-serif;
+  --color-orange: #FD602E;
+}
+
+body {
+  background-color: black;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 992px) {
+  .bodyCategorias {
+    padding: 0 30px;
+  }
+}
+.homeMobil__h1 {
+  color: white;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+p {
+  text-align: justify;
+}
+
+iframe, img {
+  max-width: 100%;
+}
+
+@media (min-width: 576px) {
+  nav {
+    background-color: red;
+  }
+}
+@media (min-width: 768px) {
+  nav {
+    background-color: green;
+  }
+}
+@media (min-width: 992px) {
+  nav {
+    background-color: yellowgreen;
+  }
+}
+@media (min-width: 1200px) {
+  nav {
+    background-color: aqua;
+  }
+}
+@media (min-width: 1400px) {
+  nav {
+    background-color: fuchsia;
+  }
+}/*# sourceMappingURL=main.css.map */
