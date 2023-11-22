@@ -7,6 +7,7 @@
 @import 'STYLES/article';
 @import 'STYLES/presentacion';
 @import 'STYLES/contruccion';
+@import 'STYLES/enlaces';
 
 
 body {
@@ -19,7 +20,6 @@ body {
 
 @media (min-width:992px) { .bodyCategorias { padding: 0 30px; } }
 
-
 .homeMobil__h1 {
     color: white;
     padding: 20px;
@@ -30,34 +30,11 @@ a { text-decoration: none; }
 ul { 
     list-style: none;
     padding-left: 0; 
-    
 }
 
-p {
-    text-align: justify;
-}
+p { text-align: justify; }
 
-
-
-iframe, img { max-width: 100%; }
-
-
-@media (min-width:576px) {
-    nav { background-color: red; }
-}
-
-@media (min-width:768px) {
-    nav { background-color: green; }
-}
-
-@media (min-width:992px) {
-    nav { background-color: yellowgreen; }
-}
-
-@media (min-width:1200px) {
-    nav { background-color: aqua; }
-}
-
-@media (min-width:1400px) {
-    nav{ background-color: fuchsia; }
+iframe, 
+img { 
+    max-width: 100%; 
 }

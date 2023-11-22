@@ -34,14 +34,16 @@ i {
     margin-bottom: 20px;
 }
 
-.footerContainer__a, .footerContainer__span {
+.footerContainer__a, 
+.footerContainer__span {
     color: white;
     font-weight: bold;
 }
 
 .footerContainer__a:hover { color: black; }
 
-.form__input, .form__textarea {
+.form__input, 
+.form__textarea {
     padding: 20px;
     width: 70%;
     margin-top: 20px;

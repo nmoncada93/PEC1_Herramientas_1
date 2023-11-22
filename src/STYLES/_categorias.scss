@@ -14,14 +14,14 @@
     font-size: 18px;
 }
 
-.categoriasContainerContent, .categoriasContainerContent--black {
+.categoriasContainerContent, 
+.categoriasContainerContent--black {
     text-align: center;
     padding: 20px;
     margin: 20px 20px;
     font-family: var(--font-titilium);  
     font-size: 18px;
     border-radius: 10px;
-    
 }
 
 .categoriasContainerContent {
@@ -29,7 +29,8 @@
     color: black;  
 }
 
-.categoriasContainerContent:hover, .categoriasContainerContent--black:hover {
+.categoriasContainerContent:hover, 
+.categoriasContainerContent--black:hover {
     background-color: var(--color-orange);
     color: white;
 }
@@ -37,8 +38,7 @@
 .categoriasContainerContent--black {
     color: white;
     margin: 20px 20px;
-    border: 2px solid var(--color-orange);      
-    
+    border: 2px solid var(--color-orange);        
 }
 
 .categoriasRelacionadas {
@@ -60,49 +60,29 @@
         grid-template-columns: 1fr 1fr;
         align-items: stretch;
         
-
-        &__h1 { font-size: 60px; }
-        
+        &__h1 { font-size: 60px; }  
     }
 
-    .categoriasContainer__a, .categoriasContainerContent, .categoriasContainerContent--black {
+    .categoriasContainer__a, 
+    .categoriasContainerContent, 
+    .categoriasContainerContent--black {
         display: flex;
         flex-direction: column;
-        
         height: 100%; 
-       
     }
 
-    .categoriasContainerContent__img {
-        margin: 0 auto;
-    }
+    .categoriasContainerContent__img { margin: 0 auto; }
     
-
-
-   
-
     .categoriasContainer--Relacionadas {
-        //display: flex; 
-        //align-items: stretch;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         align-items: center;
-        
-        
     }
-    /*
-    .categoriasContainer__a {
-        
-        flex: 1; 
-       
-        overflow: hidden;
     
-    }*/
-    
-    
-    
-
-    .categoriasContainerContent, .categoriasContainerContent--black { font-size: 20px; }
+    .categoriasContainerContent, 
+    .categoriasContainerContent--black { 
+        font-size: 20px; 
+    }
 }
 
 @media (min-width:992px) { .categoriasContainer { grid-template-columns: 1fr 1fr 1fr; } }
