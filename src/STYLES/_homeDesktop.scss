@@ -7,12 +7,14 @@
     flex: 1;
     margin: 5% 5%;
     display: none;
+   
     
     &__content { padding-left: 5%; }
 
     &__h1 {
         font-family: var(--font-orbitron);
         margin-bottom: 15%;
+      
     }
 
     &__a {

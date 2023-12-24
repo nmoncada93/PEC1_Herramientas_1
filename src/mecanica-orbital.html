@@ -20,21 +20,26 @@
 </head>
 
 <body class="bodyMecanicaOrbital">
-
     <header>
         <div class="headerMobil">
             <a href="index.html"><img class="headerMobil__img" src="./IMAGES/logo-sistemas-espaciales.png"
-                    alt="logo de un astronauta" style="width: 60; height: 60;"></a>
+                    alt="logo de un astronauta" style="width: 60px; height: 60px;"></a>
             <span class="headerMobil__span">SPACE SYSTEMS</span>
         </div>
         <include src="src/VIEWS/header.html"></include>
     </header>
-
     <main>
         <article class="article">
             <h1 class="article__h1">Mecánica Orbital</h1>
             <div class="articleContainer">
-                <img src="./IMAGES/solar-sistem.jpg" alt="imagen del sistema solar" class="articleContainer__img">
+                <!--<img src="./IMAGES/solar-sistem.jpg" alt="imagen del sistema solar" class="articleContainer__img">-->
+                <img srcset="
+                ./IMAGES/solar-sistem-small.png 320w,
+                ./IMAGES/solar-sistem-small.png 480w,
+                ./IMAGES/solar-sistem-large.jpg 800w
+                " sizes="(max-width:320px) 280px,
+                (max-width:480px) 440px, 800px" src="./IMAGES/solar-sistem-large.jpg" alt="imagen del sistema solar"
+                    class="articleContainer__img">
                 <div class="articleContainer__content">
                     <p class="articleContainer__p">Para entender y comenzar a explicar de qué se trata la astrodinámica
                         es importante situarnos y tener claro algunas definiciones y conceptos básicos como los que se
@@ -57,28 +62,30 @@
                             <dd class="articleContainer__dd"><img src="./IMAGES/aeronautica.png"
                                     alt="foto de un avion en los aires"></dd>
                         </div>
-
                     </div>
                     <div class="articleContentItem">
-                        <div class="articleContentItem1--order">
+                        <dl class="articleContentItem1--order">
                             <dt class="articleContainer__dt">Astronáutica</dt>
                             <dd class="articleContainer__dd">Es toda actividad a más de 100 km de la superficie
                                 terrestre.
                                 Se
                                 estudia todo el entorno espacial, el vacío y todas sus consecuencias, tecnologías
-                                aeroespaciales, exploración espacial y supervivencia humana, de tal manera que toda la
+                                aeroespaciales, exploración espacial y supervivencia humana, de tal manera que toda
+                                la
                                 ciencia e
-                                ingeniería aplicada se realiza teniendo en cuenta todos estos factores. En esta página
+                                ingeniería aplicada se realiza teniendo en cuenta todos estos factores. En esta
+                                página
                                 web
                                 sobre
-                                sistemas espaciales no abarcaremos todos estos contenidos pero si tenemos una categoría
+                                sistemas espaciales no abarcaremos todos estos contenidos pero si tenemos una
+                                categoría
                                 muy
                                 interesante: <a href="./medio-ambiente-espacial.html"
                                     class="articleContainer__a"><strong> Medio Ambiente
                                         Espacial</strong></a> leyendo este artículo tendremos una idea
                                 mucho más amplia
                                 de todo el entorno espacial y sus implicaciones en las misiones y sistemas.</dd>
-                        </div>
+                        </dl>
                         <div class="articleContentItem2--order">
                             <dd class="articleContainer__dd"><img src="./IMAGES/astronautica.png"
                                     alt="foto de un avion en los aires"></dd>
@@ -123,8 +130,8 @@
             <div class="articleContent--simple">
                 <h2 class="article__h2">La Mecánica Orbital</h2>
                 <div class="articleContentItem">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YD4dol6JM_0" frameborder="0"
-                        allowfullscreen class="articleContainer__iframe"></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/YD4dol6JM_0" allowfullscreen
+                        class="articleContainer__iframe"></iframe>
                     <blockquote class="articleContainer__blockquote">
                         <p style="text-align: center;">"La mecánica orbital es un campo fascinante que nos permite
                             comprender la danza celestial de
@@ -278,17 +285,14 @@
             </div>
         </article>
         <div class="categoriasRelacionadas">
-
             <h2 class="categoriasRelacionadas__h2">DESCRUBRE MÁS CATEGORÍAS</h2>
             <div class="categoriasContainer--Relacionadas">
-
                 <a href="cohetes-y-lanzadores.html" class="categoriasContainer__a">
                     <div class="categoriasContainerContent--black">
                         <h3 class="categoriasContainerItems__h3">Cohetes y lanzadores</h3>
                         <img src="./IMAGES/cohetes.png" alt="imagen cohetes" class="categoriasContainerContent__img">
                     </div>
                 </a>
-
                 <a href="control-termico.html" class="categoriasContainer__a">
                     <div class="categoriasContainerContent">
                         <h3 class="categoriasContainerItems__h3">Control termico</h3>
@@ -296,7 +300,6 @@
                             class="categoriasContainerContent__img">
                     </div>
                 </a>
-
                 <a href="medio-ambiente-espacial.html" class="categoriasContainer__a">
                     <div class="categoriasContainerContent--black">
                         <h3 class="categoriasContainerItems__h3">Medio Ambiente Espacial</h3>
@@ -304,7 +307,6 @@
                             class="categoriasContainerContent__img">
                     </div>
                 </a>
-
                 <a href="potencia.html" class="categoriasContainer__a">
                     <div class="categoriasContainerContent">
                         <h3 class="categoriasContainerItems__h3">Potencia</h3>
@@ -315,9 +317,7 @@
             </div>
         </div>
     </main>
-
     <include src="src/VIEWS/footer.html"></include>
-
 </body>
 
 </html>

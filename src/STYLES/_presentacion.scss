@@ -1,5 +1,5 @@
 .presentacionTitle {
-    background-image: url(./IMAGES/astronauta.jpg);
+    background-image: url(./IMAGES/astronauta-large.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -9,7 +9,7 @@
         font-family: var(--font-orbitron);
         text-align: center;
         font-size: 50px;
-        padding: 120px 0;
+        padding:100px 0;
     }
 }
 
@@ -42,6 +42,7 @@
     text-align: center;
     font-size: 30px;
     padding: 20px;
+    
 }
 
 .presentacionIntro__h3 {
@@ -97,5 +98,8 @@
     .superpuestaContainer {
         margin-left: 150px;
        margin-right: 150px;
-    }  
+    } 
+    
+    .presentacionH2{ margin-top: -150px; }
+    
 }

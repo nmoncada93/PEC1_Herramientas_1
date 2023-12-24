@@ -6,7 +6,8 @@
     margin: 20px;
 }
 
-.footerContainer__h3 {
+
+.footerContainer__h3, .linksFooter__h3 {
     font-size: 30px;
     font-family: var(--font-orbitron);
     letter-spacing: 1.5;
@@ -35,12 +36,16 @@ i {
 }
 
 .footerContainer__a, 
-.footerContainer__span {
+.footerContainer__span,
+.linksFooter__a {
     color: white;
     font-weight: bold;
 }
 
-.footerContainer__a:hover { color: black; }
+.footerContainer__a:hover,
+.linksFooter__a:hover { 
+    color: black; 
+}
 
 .form__input, 
 .form__textarea {
@@ -62,11 +67,26 @@ i {
 
 .form__btn:hover { background-color: var(--color-orange); }
 
+.form__p { text-align: center;}
+
+.logoFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoFooter__span {
+    font-family: var(--font-orbitron);
+  font-weight: 700;
+  font-size: 25px;
+}
+
 @media (min-width:992px) {
     .footer { 
         display: flex;
         justify-content: space-around;
         align-items: center;
+        
      }
 
      .footerContainer + .footerContainer { margin-left: 2.5%; }
